@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login / Register & Cədvəl</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Giriş / Qeydiyyat</h1>
+
+    <div class="tabs">
+      <button id="tab-login" class="tab active">Login</button>
+      <button id="tab-register" class="tab">Register</button>
+    </div>
+
+    <div id="login-form" class="form">
+      <label>Email</label>
+      <input id="login-email" type="email" placeholder="you@example.com">
+      <label>Şifrə</label>
+      <input id="login-pass" type="password" placeholder="şifrəniz">
+      <button id="btn-login">Daxil ol</button>
+      <p class="msg" id="login-msg"></p>
+    </div>
+
+    <div id="register-form" class="form hidden">
+      <label>Ad</label>
+      <input id="reg-name" type="text" placeholder="Adınız">
+      <label>Email</label>
+      <input id="reg-email" type="email" placeholder="you@example.com">
+      <label>Şifrə</label>
+      <input id="reg-pass" type="password" placeholder="şifrəniz">
+      <button id="btn-register">Qeydiyyat</button>
+      <p class="msg" id="reg-msg"></p>
+    </div>
+
+    <hr>
+
+    <h2>Nümunə Cədvəl</h2>
+    <table id="sample-table">
+      <thead>
+        <tr><th>#</th><th>Ad</th><th>Email</th><th>Qeyd</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Ayşə</td><td>ayse@mail.com</td><td>tələbə</td></tr>
+        <tr><td>2</td><td>Elçin</td><td>elchin@mail.com</td><td>müəllim</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
